@@ -13,11 +13,11 @@ protocol APIBuilder {
     var urlRequest: URLRequest { get }
 }
 
-enum NewsAPI {
+enum NewsAPIService {
     case getNews
 }
 
-extension NewsAPI: APIBuilder {
+extension NewsAPIService: APIBuilder {
     
     var baseUrl: URL {
         switch self {
